@@ -36,7 +36,7 @@ public class Electrodomestico {
 	}
 	/**
 	 * constructor que utiliza como parametro precio y peso utilizando por defecto
-	 * los valores de consumo energetico
+	 * los valores de consumo energetico y color
 	 * @param precio valor de tipo Float. Define el Precio inicial del Electrodomestico
 	 * si es menor que cero se asiganara cero como valor al atributo precioBase
 	 * @param peso valor de tipo int, Define el pesoTotal del electrodomestico
@@ -56,8 +56,7 @@ public class Electrodomestico {
 	}
 	
 	/**
-	 * constructor que utiliza como parametro precio y peso utilizando por defecto
-	 * los valores de consumo energetico
+	 * constructor que utiliza como parametro precio, color, consumo, peso
 	 * @param precio valor de tipo Float. Define el Precio inicial del Electrodomestico
 	 * si es menor que cero se asiganara cero como valor al atributo precioBase
 	 * @param peso valor de tipo int, Define el pesoTotal del electrodomestico
@@ -131,7 +130,8 @@ public class Electrodomestico {
 	/**
 	 * Metodo utilizado para reajustar el valor del electrodomestico.
 	 * El reajuste se realizara a partir de los atributos peso y consumo energetico
-	 * @return retorna el precioBase + ajuste segun corresponda a los atributos del objeto
+	 * @return valor de tipo float. Retorna el precioBase + ajuste segun corresponda 
+	 * a los atributos del objeto
 	 */
 	public float precioFinal() {
 		float precioRetorno=this.precioBase;
