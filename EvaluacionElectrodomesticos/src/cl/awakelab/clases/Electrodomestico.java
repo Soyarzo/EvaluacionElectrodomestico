@@ -10,7 +10,7 @@ package cl.awakelab.clases;
  */
 public class Electrodomestico {
 	
-	private final float PRECIO_BASE_DEFECTO = 100000f;
+	private final float PRECIO_BASE_DEFECTO = 100000;
 	private final String COLOR_DEFECTO="blanco";
 	private final char CONSUMO_ENERGETICO_DEFECTO='f';
 	private final int PESO_DEFECTO=5;
@@ -46,13 +46,15 @@ public class Electrodomestico {
 		this();
 		if (precio<0) {
 			this.precioBase = 0;
-		}else
+		}else {
 			this.precioBase = precio;
+		}
 		
 		if (peso<0) {
 			this.peso = 0;
-		}else
+		}else {
 			this.peso = peso;
+		}
 	}
 	
 	/**
@@ -156,7 +158,7 @@ public class Electrodomestico {
 		}else if (this.consumoEnergetico==('e')) {
 			precioRetorno+=30;
 		}else
-			precioRetorno=+10;
+			precioRetorno+=10;
 		
 		return precioRetorno;
 	}
