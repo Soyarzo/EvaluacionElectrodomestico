@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>54</y>
+      <w>387</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;SuperClass&gt;&gt;
+Electrodomestico
+{Some Properties}
+--
+-PRECIO_BASE_DEFECTO: float
+-COLOR_DEFECTO:String
+-CONSUMO_ENERGETICO_DEFECTO:char
+-PESO_DEFECTO: int
+-precioBase: float
+-color: String
+-consumoEnergetico:char
+-peso: int
+--
++Electrodomestico()
++Electrodomestico(precio:float,peso:int)
++Electrodomestico(precio:float,color:String,consumo:char,peso:int)
+-comprobarConsumoEnergetico(letra:char):char
+-comprobarColor(color:String):String
++precioFinal():float</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>135</x>
+      <y>369</y>
+      <w>558</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Television extends Electrodomestico
+{Some Properties}
+--
+-RESOLUCION_DEFECTO:int
+-SINTONIZADORTDT_DEFECTO:boolean
+-sintonizadorTDT:boolean
+-resolucion:int
+--
++Television()
++Television(precio:float,peso:int)
++Television(precio:float,color:String,consumo:char,peso:int,resolucion:int,sintonizadorTDT:boolean)
++precioFinal():float</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>99</y>
+      <w>387</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Lavadora extends Electrodomestico
+{Some Properties}
+--
+-CARGA_DEFECTO:int
+-carga:int
+--
++Lavadora()
++Lavadora(precio:float,peso:int)
++Lavadora(precio:float,color:String,consumo:char,peso:int,carga:int)
++precioFinal():float</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>198</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>306</y>
+      <w>27</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>

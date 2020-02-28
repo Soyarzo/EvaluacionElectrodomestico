@@ -55,7 +55,6 @@ public class Television extends Electrodomestico {
 	 * se utilizara el valor por defecto blanco
 	 * @param consumo valor de tipo char Define el consumo energetico de la Television
 	 * si el valor ingresado no esta entre A y F se asignara valor por defecto F
-	 * @param carga valor de tipo int. Define la carga que puede utilizar la Television
 	 * @param resolucion valor de tipo int. Define la resolucion de la Television
 	 * @param sintonizador valor de tipo Boolean. Define si el televisor tiene o no
 	 * sintonizadorTDT
